@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Personal Blog</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Inocio</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/blog/post/new">New Post</a></li>
+           <% if (!user) { %>
+            <li><a href="/users/login">Login</a></li>
+            <li><a href="/users/signup">Signup</a></li>
+           <% } else {%>
+             <li><a href="/category">Categories</a></li>
+             <li><a href="/category/new">New Category</a></li>
+             <li><a href="/users/logout">Logout</a></li>
+             <li><%= user.name%></li>
+
+          <% } %>
+        </ul>
+      </nav>
+    </header

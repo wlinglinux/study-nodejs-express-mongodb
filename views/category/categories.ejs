@@ -1,0 +1,15 @@
+<% include ../partials/header %>
+  <h1>Categories</h1>
+  <% categories.forEach(function(category){ %>
+    <div>
+      <a href="/blog/category/<%= category._id%>"><h1><%= category.name%></h1></a>
+      <!-- <p><%= category.name%></p> -->
+
+      <form action="/category/<%= category._id%>?_method=DELETE" method="post">
+        <a href="/category/<%= category._id %>/edit">Editar</a>
+        <input type="submit" value="Borrar">
+      </form>
+
+    </div>
+  <% }) %>
+<% include ../partials/footer %>

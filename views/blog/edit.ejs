@@ -1,0 +1,22 @@
+<% include ../partials/header %>
+  <h1>Create a Post</h1>
+  <form action="/blog/post/new" method="post">
+      <lable for="title">Ttitulo</label>
+      <input type="text" id="title" name="title" value="<%= post.title%>">
+
+      <lable for="image">Image</lable>
+      <input type="text" id="image" name="image" value="<%= post.image%>">
+
+      <lable for="content">Content</lable>
+      <input type="text" id="content" name="content" value="<%= post.content%>">
+
+      <select name="category">
+        <option value="Coding">Coding></option>
+        <option value="Web Development">Web Develop</option>
+      </select>
+
+      <input type="submit" value="Crear">
+      <a href="/blog"></a>
+  </form>
+
+<% include ../partials/footer %>

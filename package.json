@@ -1,0 +1,37 @@
+{
+  "name": "express-mongobd-blog",
+  "version": "1.0.0",
+  "description": "Blog personal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "mongodb"
+  ],
+  "author": "alice",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "body-parser": "^1.16.0",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.5.5",
+    "express": "^4.14.1",
+    "express-session": "^1.15.0",
+    "flash": "^1.1.0",
+    "method-override": "^2.3.7",
+    "moment": "^2.17.1",
+    "mongoose": "^4.8.1",
+    "morgan": "^1.8.0",
+    "nodemailer": "^2.7.2",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.0.0"
+  },
+  "devDependencies": {
+    "bluebird": "^3.4.7",
+    "express-session": "^1.15.0"
+  }
+}

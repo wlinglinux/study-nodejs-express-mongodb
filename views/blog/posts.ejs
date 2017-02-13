@@ -1,0 +1,11 @@
+<% include ../partials/header %>
+  <h1>Blog</h1>
+  <% posts.forEach(function(post){ %>
+    <div>
+      <a href="/blog/post/<%= post._id%>"><h1><%= post.title%></h1></a>
+      <p><%= post.content%></p>
+      <!-- <a href="/blog/post/<%= post._id%>"><img src="<%= post.image%>"></a> -->
+      
+    </div>
+  <% }) %>
+<% include ../partials/footer %>

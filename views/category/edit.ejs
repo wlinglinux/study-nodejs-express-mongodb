@@ -1,0 +1,9 @@
+<% include ../partials/header %>
+  <h1>Edit a Category</h1>
+  <form action="/category/<%= category.id%>/edit?_method=PUT" method="post">
+      <lable for="name">Category Name</label>
+      <input type="text" id="name" name="name" value="<%= category.name%>">
+      <input type="submit" value="Crear">
+  </form>
+
+<% include ../partials/footer %>
